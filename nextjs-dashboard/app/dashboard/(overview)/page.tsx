@@ -9,6 +9,7 @@ import {
     RevenueChartSkeleton
 } from '@/app/ui/skeletons'
 
+
 export default async function Page() {
     
 
@@ -29,7 +30,6 @@ export default async function Page() {
                 <Suspense fallback={<LatestInvoicesSkeleton />}>
                     <LatestInvoices />
                 </Suspense>
-
             </div>
         </main>
     )

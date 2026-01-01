@@ -1,6 +1,5 @@
 import * as React from "react"
 
-import CardWrapper from "./cards"
 import {
   Carousel,
   CarouselContent,
@@ -8,20 +7,13 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel"
+import CardWrapper from "../dashboard/cards"
 
 export function CarouselDemo() {
   return (
     <Carousel className="w-full max-w-xs">
       <CarouselContent>
-        {Array.from({ length: 5 }).map((_, index) => (
-          <CarouselItem key={index}>
-            <div className="p-1">
-              <CardWrapper>
-                
-              </CardWrapper>
-            </div>
-          </CarouselItem>
-        ))}
+        <CardWrapper />
       </CarouselContent>
       <CarouselPrevious />
       <CarouselNext />
